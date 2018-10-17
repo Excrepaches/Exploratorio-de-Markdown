@@ -1,0 +1,121 @@
+---
+title: "Exploratorio de Rmarkdown"
+author: "kevin Flórez Ciro"
+date: "11 de septiembre de 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# El uso de un numeral (#) se emplea en la realización de títulos principales (Encabezados).
+
+## El uso de doble numeral (##) es usado cuando se desea un subtítulo o título menor.
+
+### El triple numeral (###) se usa para los subtítos de segundo orden (o subtítulos de los subtítulos).
+
+#### Se supone que los 4 numerales son para ir descendiendo en la prioridad de los encabezados o títulos, y el número de numerales empleados es, a su vez, el orden del título escrito.
+
+##### Texto de menor grado (5 numerales).
+
+Esto es texto plano (sin numerales).
+
+## Las viñetas son otro caso
+
+Para la creación de las viñetas, hay que tener muy presente y en claro la tabulación, puesto que, es el denotante del nivel de la viñeta, además de garantizar el orden y la presentación del documento
+
+Estas son creadas con los caracteres suma (+), resta (-) o adición multiplicativa (*).
+
++ Viñeta de primer orden  
+    - Viñeta de segundo orden  
+        * Viñeta de tercer orden  
+            + Viñeta de cuarto orden 
+                * Viñeta de quinto orden (y así sucesivamente) 
+                
+## Inserción de imágenes
+
+Para dicho efecto, la imagen que se desee adjuntar debe estar presente en la carpeta donde se está trabajando; además, existen dos modos (vistos hasta ahora) para la adición de imagenes a documentos Markdown; una de ellas es con código R, y la otra es con la escritura en lenguaje html (muy simiar al c+ de wordpad).
+
+<center>
+![](Amanecer.jpg)
+</center>
+
+Posdata, fotos con relativos derechos de autor.
+      
+
+Experiemntando un poco, creo que la inserción de vídeos puede hacerse de modo similar (puesto que los vídeos son solo imagenes sobrepuestas en una secuencialidad e intervalos definidos), probando con el código de html:
+
+<center>
+<high>
+![](Lose on you LP.mp4)
+</high>
+</center>
+
+
+Rompiendo todas mis espectativas, si es posible la inserción de videos con ese código sencillo, pero solo puede visualizarse con el navegador (la pestaña plots de la ventana de vistas no muestra ni reproduce los vídeos)
+
+Sin embargo, no se aún como hacer que el vídeo tenga un tamaño mayor (quizá no este empleando la palabra correcta, he probado con "wide", "big", "high", "extend").
+
+## Ahora los hipervínculos
+
+Existen infinidad de formas para poner un hipervínculo en un documento Markdown, todo dependiendo de como se quiera mostrar dicho link, la forma más fácil y directa es simplemente copiando el link:
+
+https://github.com/unal-semilleroR-FacCA/SemilleroR_Martes
+
+Pero esto hará que se muestre el texto completo, sin máscaras que mejoren la interactividad del usuario y la página, para que ello ocurra, se enmascaa o se cambia e texto que se ha de mnostrar, que es realmente lo divertido de los hipervínculos.
+
+[Link enmascarado](https://github.com/unal-semilleroR-FacCA/SemilleroR_Martes)
+
+Para enmascarar el link, bata con encerrarle entre parentesis (), y ponerle un nombre entre llaves [] justo antes de poner el link, siendo el caso: ([texto enmascarador] y luego (link)) 
+
+## Opciones de escritura
+
+ASí como los títulos y subtítulos, las viñetas y subviñetas, existen otros modos para embellecer la escritura en cualquier documento, y son los conocidos  texto itálico (cursiva), texto resaltado (negrilla) y el subrayado (este último no se como realizarlo aún, puesto que como se supone ha de salir, es realmente otra alternativa para el texto en negrilla) y combinaciones entre estos
+
+Por ejemplo:
+
+_Cursiva_ se hace poniendo la palabra o frase entre guiones bajos (_)  
+
+*Cursiva* también puede salir si se encierra la palabra o frase entre asteríscos (*)  
+
+**Negrilla** se hace poninedo la palabra o frase entre dos asteríscos (**)  
+
+__Negrilla__ también se puee emplear si se encierra la palabra o frase entre dos guiones bajos (__)  
+
+***Cursiva negrilla***   sale al combinar los tipos de caracteres para las opciones anteriores (siendo el mismo tipo de combinacion), en otras palabras, si se pone la frase o palabra entre 3 asteíscos o entre 3 guiones al piso, esta saldrá ___como negrilla cursiva___
+
+~~Tachado~~ es otra alternativa de escritura, que se logra poninendo el texto entre 2 símbolos de tílde (~~)
+
+## Impresiones con código R
+
+Primero se ha de inserar un extracto de R para poder codificar, se puede hacer mediente el botón de insertar o con el comando "AltGr + I", luego se puede graficar o insertar tablas o lo que se desee hacer empleando a R.
+
+Para este caso, se imprimirá un función predeterminada de R (la función iris)
+
+```{r}
+plot(iris3)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
